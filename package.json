@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "repository": {
-    "url": "git@github.com:ManuelLG92/javascript-serializer.git",
+    "url": "https://github.com/ManuelLG92/javascript-serializer.git",
     "type": "git"
   },
   "type": "module",
