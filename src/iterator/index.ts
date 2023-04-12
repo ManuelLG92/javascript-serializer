@@ -12,5 +12,4 @@ const iterateOverDeepKeys = (props, callback) =>
         return accumulator;
       }, {})
     : props;
-
 export default iterateOverDeepKeys;
