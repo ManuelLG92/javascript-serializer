@@ -1,51 +1,50 @@
 {
-  "name": "@manuellg92/javascript-ts-serializer",
-  "version": "0.0.1",
-  "description": "serializer",
-  "license": "MIT",
-  "main": "lib/es5/index.js",
-  "module": "lib/es6/index.js",
-  "repository": {
-    "url": "git+https://github.com/ManuelLG92/javascript-serializer.git",
-    "type": "git"
-  },
-  "author": {
-    "name": "Manuel Leon"
-  },
-  "type": "module",
-  "keywords": [
-    "lib",
-    "javascript",
-    "typescript",
-    "serializer",
-    "utils",
-    "utilities"
-  ],
-  "bugs": {
-    "url": "https://github.com/ManuelLG92/javascript-serializer/issues"
-  },
-  "homepage": "https://github.com/ManuelLG92/javascript-serializer#readme",
-  "scripts": {
-    "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json",
-    "prettier:fix": "prettier --write .",
-    "prettier:check": "prettier --check .",
-    "test": "node --experimental-specifier-resolution=node --test --loader ts-node/esm test/testing.test.ts"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "prettier": "^2.8.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "camel-case": "^4.1.2",
-    "constant-case": "^3.0.4",
-    "dot-case": "^3.0.4",
-    "header-case": "^2.0.4",
-    "no-case": "^3.0.4",
-    "param-case": "^3.0.4",
-    "pascal-case": "^3.1.2",
-    "path-case": "^3.0.4",
-    "snake-case": "^3.0.4"
-  }
+	"name": "@manuellg92/javascript-ts-serializer",
+	"version": "0.0.1",
+	"description": "serializer",
+	"license": "MIT",
+	"repository": {
+		"url": "git+https://github.com/ManuelLG92/javascript-serializer.git",
+		"type": "git"
+	},
+	"author": {
+		"name": "Manuel Leon"
+	},
+	"keywords": [
+		"lib",
+		"javascript",
+		"typescript",
+		"serializer",
+		"utils",
+		"utilities"
+	],
+	"bugs": {
+		"url": "https://github.com/ManuelLG92/javascript-serializer/issues"
+	},
+	"homepage": "https://github.com/ManuelLG92/javascript-serializer#readme",
+	"scripts": {
+		"compile": "rm -rf dist/ && tsc",
+		"prettier:fix": "prettier --write .",
+		"prettier:check": "prettier --check .",
+		"test": "npm run compile && node --loader tsx --test test/**.test.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.18",
+		"prettier": "^2.8.1",
+		"ts-node": "^10.9.1",
+		"tsx": "^3.12.7",
+		"typescript": "^4.9.4"
+	},
+	"dependencies": {
+		"@manuellg92/javascript-ts-serializer": "^0.0.1",
+		"camel-case": "^4.1.2",
+		"constant-case": "^3.0.4",
+		"dot-case": "^3.0.4",
+		"header-case": "^2.0.4",
+		"no-case": "^3.0.4",
+		"param-case": "^3.0.4",
+		"pascal-case": "^3.1.2",
+		"path-case": "^3.0.4",
+		"snake-case": "^3.0.4"
+	}
 }
