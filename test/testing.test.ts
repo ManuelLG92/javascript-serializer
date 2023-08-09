@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { serialize } from '../src';
-import { CasesEnum } from '../src/resolver/constants';
+import { serialize } from 'src';
+import { CasesEnum } from 'src/resolver/constants';
 const stubCamelCase = {
 	aBc: 1,
 	helloWorld: 'a',

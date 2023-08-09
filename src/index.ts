@@ -1,6 +1,6 @@
-import { matchConverterInterface, Options } from './resolver/constants';
-import getCaseConverter from './resolver';
-import iterateOverDeepKeys from './iterator';
+import { matchConverterInterface, Options } from 'src/resolver/constants';
+import getCaseConverter from 'src/resolver';
+import iterateOverDeepKeys from 'src/iterator';
 
 interface Props<T extends keyof matchConverterInterface> {
 	type: keyof Options;
