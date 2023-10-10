@@ -9,7 +9,7 @@ interface Props<T extends keyof matchConverterInterface> {
 	skip?: string[];
 }
 
-export const serialize = <T extends keyof matchConverterInterface>(
+const serialize = <T extends keyof matchConverterInterface>(
 	props: Props<T>,
 ): Record<string, unknown> => {
 	const caseConverter = getCaseConverter(props.type);
@@ -20,7 +20,7 @@ export const serialize = <T extends keyof matchConverterInterface>(
 		if (keysToSkipLength > 0 && keysToSkip.includes(key)) {
 			return key;
 		}
-		return caseConverter(key, props.options);
+		return caseConverter(key, props.options ?? {});
 	};
 
 	return iterateOverDeepKeys({
@@ -28,3 +28,5 @@ export const serialize = <T extends keyof matchConverterInterface>(
 		callback: (key) => callback(key),
 	});
 };
+
+export default serialize;

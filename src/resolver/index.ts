@@ -28,7 +28,7 @@ const getCaseConverter = <T extends keyof Options>(
 	const matched = matchConverter[type];
 	if (!matched) {
 		throw Error(
-			`Case type: ${type} not found. Available types are: ${Object.keys(
+			`Case type: ${type} not found. Available case types are: ${Object.values(
 				CasesEnum,
 			).join(', ')}`,
 		);

@@ -1,7 +1,10 @@
 {
 	"name": "@manuellg92/javascript-ts-serializer",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "serializer",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": ["/dist"],
 	"license": "MIT",
 	"repository": {
 		"url": "git+https://github.com/ManuelLG92/javascript-serializer.git",
