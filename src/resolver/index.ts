@@ -3,11 +3,7 @@ import { camelCase } from 'camel-case';
 import { paramCase } from 'param-case';
 import { dotCase } from 'dot-case';
 import { pascalCase } from 'pascal-case';
-import {
-	CasesEnum,
-	matchConverterInterface,
-	Options,
-} from 'src/resolver/constants';
+import { CasesEnum, matchConverterInterface, Options } from './constants';
 
 const toLowerCase = (value: string) => value.toLowerCase();
 const toUpperCase = (value: string) => value.toUpperCase();
