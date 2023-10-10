@@ -18,7 +18,7 @@ const matchConverter = {
 	[CasesEnum.pascalCase]: pascalCase,
 };
 
-const getCaseConverter = <T extends keyof Options>(
+const getCaseConverter = <T extends CasesEnum>(
 	type: T,
 ): matchConverterInterface[T] => {
 	const matched = matchConverter[type];
