@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { serialize } from 'src';
+import serializer from 'src';
 import { CasesEnum } from 'src/resolver/constants';
 const stubCamelCase = {
 	aBc: 1,
@@ -34,7 +34,7 @@ test('test convert to snake case', () => {
 			},
 		],
 	};
-	const testConv = serialize({
+	const testConv = serializer({
 		type: CasesEnum.snakeCase,
 		value: stubCamelCase,
 	});
@@ -57,7 +57,7 @@ test('test convert to snake case skip nested_arr', () => {
 			},
 		],
 	};
-	const testConv = serialize({
+	const testConv = serializer({
 		type: CasesEnum.snakeCase,
 		value: stubCamelCase,
 		skip: ['nestedArr'],

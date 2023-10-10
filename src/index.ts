@@ -9,7 +9,7 @@ interface Props<T extends keyof matchConverterInterface> {
 	skip?: string[];
 }
 
-const serialize = <T extends keyof matchConverterInterface>(
+const serializer = <T extends keyof matchConverterInterface>(
 	props: Props<T>,
 ): Record<string, unknown> => {
 	const caseConverter = getCaseConverter(props.type);
@@ -29,4 +29,4 @@ const serialize = <T extends keyof matchConverterInterface>(
 	});
 };
 
-export default serialize;
+export default serializer;
