@@ -1,6 +1,6 @@
 {
 	"name": "@manuellg92/javascript-ts-serializer",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "serializer",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
